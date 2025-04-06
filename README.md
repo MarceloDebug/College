@@ -1,4 +1,4 @@
-# Lista de Exercícios – Ciência da Computação
+# Lista de Exercícios básicos em C – Ciência da Computação
 
 ##  Exercícios Gerais
 
