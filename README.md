@@ -1,6 +1,6 @@
 # College Repository
 
-Este repositório tem como objetivo armazenar e organizar conteúdos relacionados aos meus estudos na faculdade. Aqui você encontrará exercícios, projetos, anotações e outros materiais desenvolvidos ao longo do curso.
+Este repositório tem como objetivo armazenar e organizar conteúdos relacionados aos meus estudos na faculdade de Ciências da Computação. Aqui você encontrará exercícios, projetos, anotações e outros materiais desenvolvidos ao longo do curso.
 
 ## Estrutura
 
