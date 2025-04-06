@@ -1,45 +1,65 @@
-LISTA DE EXERCÍCIOS 
+📘 Lista de Exercícios – Ciência da Computação
+✅ Exercícios Gerais
+✏️ Faça um programa que receba os três lados de um triângulo e:
 
-1. Faça um programa que receba os três lados de um triângulo e faça as seguintes atividades: retornar se
-os três lados realmente formam um triângulo e que tipo de triângulo é este.
-2. Faça um programa que calcule a soma dos n primeiros números primos, sendo n definido pelo usuário.
-(Utilize laço For ou While)
-3. Faça um programa que calcule o n − ésimo termo da série de Fibonacci. (Utilize laço For ou While)
-4. Faça um programa que retorne o resultado do somatório abaixo, sendo n o parâmetro de entrada.
+Verifique se os lados formam um triângulo.
 
-(Utilize laço For ou While)
-5. Faça um programa que calcule e imprima o menor de três números. (Utilize laço For ou While)
-6. Faça um programa que calcule e imprima o maior de três números. (Utilize laço For ou While)
+Informe o tipo do triângulo (equilátero, isósceles ou escaleno).
 
-1. Crie um programa que imprima os números de 1 a 10 usando um loop "while".
-2. Escreva um programa que solicite ao usuário um número e imprima os números de 1 até o número
-inserido usando um loop "while".
-3. Crie um programa que calcule a soma dos números pares de 1 a 100 usando um loop "while"
-4. Crie um programa que peça ao usuário para adivinhar um número (por exemplo, 42) e continue
-pedindo até que o usuário acerte o número.
-5. Escreva Escreva um programa que calcule a média de 5 números fornecidos pelo usuário usando um
-loop "while".
-6. Escreva um programa que encontre o maior número em uma lista de números fornecidos pelo
-usuário usando um loop "while".
-7. Crie um programa que calcule a soma dos dígitos de um número inteiro fornecido pelo usuário
-usando um loop "while".
+🔢 Escreva um programa que calcule a soma dos n primeiros números primos, onde n é definido pelo usuário.
+(Utilize for ou while)
 
-1. Escreva um programa que solicite ao usuário um número e imprima os números pares de 2 até o
-número inserido usando um loop "for".
-2. Crie um programa que calcule a soma dos números pares de 1 a 100 usando um loop "for"
-3. Crie um programa que peça ao usuário para adivinhar um número (por exemplo, 42) e continue
-pedindo até que o usuário acerte o número
-4. Escreva Escreva um programa que calcule a média de 10 números fornecidos pelo usuário usando
-um loop "for".
-5. Faça um programa para imprimir todos os números entre 1 e 100, exceto aqueles divisíveis por 6.
-6. Faça um programa que leia um inteiro positivo n, e imprima as potências do número de 0 até n −
-ésima potência: exemplo para n = 3: 3
-0 + 3
-1 + 3
-2 + 3
-3 = 40
+🧮 Escreva um programa que calcule o n-ésimo termo da série de Fibonacci.
+(Utilize for ou while)
 
-7. Dado uma sequência de entrada a1, a2, a3, ... , an, calcule e imprima a soma desta sequência, sendo
-n um valor inteiro digitado pelo usuário.
+∑ Faça um programa que retorne o resultado do seguinte somatório, sendo n o parâmetro de entrada:
+𝑆
+=
+1
++
+2
++
+3
++
+…
++
+𝑛
+S=1+2+3+…+n
+(Utilize for ou while)
 
-8. Faça um programa que leia um inteiro n e calcule e imprima o Fatorial de n.
+🔽 Crie um programa que calcule e imprima o menor de três números.
+(Utilize for ou while)
+
+🔼 Crie um programa que calcule e imprima o maior de três números.
+(Utilize for ou while)
+
+🔁 Estruturas de Repetição: while
+Imprima os números de 1 a 10 usando um loop while.
+
+Solicite ao usuário um número e imprima os números de 1 até esse número com while.
+
+Calcule a soma dos números pares de 1 a 100 usando while.
+
+Jogo da adivinhação: peça ao usuário para adivinhar um número (ex: 42) até acertar.
+
+Calcule a média de 5 números fornecidos pelo usuário usando while.
+
+Encontre o maior número em uma lista fornecida pelo usuário usando while.
+
+Calcule a soma dos dígitos de um número inteiro fornecido pelo usuário usando while.
+
+🔁 Estruturas de Repetição: for
+Solicite um número ao usuário e imprima os números pares de 2 até esse número com for.
+
+Calcule a soma dos números pares de 1 a 100 usando for.
+
+Jogo da adivinhação com for: continue pedindo até o usuário acertar o número (ex: 42).
+
+Calcule a média de 10 números fornecidos pelo usuário usando for.
+
+Imprima todos os números de 1 a 100, exceto os divisíveis por 6.
+
+Leia um número inteiro positivo n e imprima as potências de um número base de 0 até n:
+
+Exemplo para base = 3 e n = 3:
+3⁰ + 3¹ + 3² + 3³ = 40
