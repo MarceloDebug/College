@@ -50,6 +50,7 @@
 4. Calcule a **média de 10 números** fornecidos pelo usuário usando `for`.
 5. Imprima todos os números de 1 a 100, **exceto os divisíveis por 6**.
 6. Leia um número inteiro positivo `n` e imprima as potências de um número base de `0` até `n`.
-
-   **Exemplo para base = 3 e n = 3:**
+7. Dado uma sequência de entrada a1, a2, a3, ... , an, calcule e imprima a soma desta sequência, sendo
+n um valor inteiro digitado pelo usuário.
+8. Faça um programa que leia um inteiro n e calcule e imprima o Fatorial de n.
 
