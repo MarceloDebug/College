@@ -4,8 +4,8 @@ Este repositório tem como objetivo armazenar e organizar conteúdos relacionado
 
 ## Estrutura
 
-- `Exercicies/Basic exercises`: Exercícios básicos de programação, lógica e estruturas de repetição como `for` e `while`.
-- (Outras pastas podem ser adicionadas com conteúdos de diferentes matérias ou projetos)
+- `Exercicies/Basic exercises`: Exercícios básicos de programação, lógica e estrutura de dados `.
+- Projetos maiores, como jogos ou sistemas.
 
 ## Sobre
 
