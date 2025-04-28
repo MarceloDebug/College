@@ -88,6 +88,25 @@ void exibirTabuleiro(int linhas, int colunas, char **tabuleiroExibicao){
     }
 }
 
+//Função para ler coordenadas
+void lerCoordenada(int linhas, int colunas, int *x, int *y){
+    
+    //loop para tratamento de erro
+    while(1){
+        printf("Número da linha: ");
+        scanf("%d", x);
+        printf("Número da coluna: ");
+        scanf("%d", y);
+        
+        if(*x>=linhas || *x<0 || *y>=colunas || *y<0){
+            printf("Coordenadas invalidas, tente novamente\n\n");
+        }
+        else{
+            break;
+        }
+    }
+}
+
 
 //Função para revelar campo 
 void revelarCampos(int linhas, int colunas, int **tabuleiro, char **tabuleiroExibicao, int x, int y) {
@@ -133,8 +152,15 @@ int main() {
 
     //Iniciando a função de número aleatório baseado no horário do sistema
     srand(time(0));
+                      
+    printf("\n");
+    printf("░█████╗░░█████╗░███╗░░░███╗██████╗░░█████╗░  ███╗░░░███╗██╗███╗░░██╗░█████╗░██████╗░░█████╗\n");
+    printf("██╔══██╗██╔══██╗████╗░████║██╔══██╗██╔══██╗  ████╗░████║██║████╗░██║██╔══██╗██╔══██╗██╔══██╗\n");
+    printf("██║░░╚═╝███████║██╔████╔██║██████╔╝██║░░██║  ██╔████╔██║██║██╔██╗██║███████║██║░░██║██║░░██║\n");
+    printf("██║░░██╗██╔══██║██║╚██╔╝██║██╔═══╝░██║░░██║  ██║╚██╔╝██║██║██║╚████║██╔══██║██║░░██║██║░░██\n");
+    printf("╚█████╔╝██║░░██║██║░╚═╝░██║██║░░░░░╚█████╔╝  ██║░╚═╝░██║██║██║░╚███║██║░░██║██████╔╝╚█████\n\n");
+    
 
-    printf("----------------- CAMPO MINADO -----------------\n\n");
     printf("Escolha uma opção:\n");
     printf("1 - Tabuleiro 10x10\n");
     printf("2 - Tabuleiro 20x20\n");
@@ -183,16 +209,20 @@ int main() {
         printf("1 - Colocar Marcação de bomba\n");
         printf("2 - Revelar campo\n");
         scanf("%d", &jogada);
+        
 
         //Opções da jogada seguinte
         switch(jogada){
 
             case 1:
                 printf("Em que campo deseja colocar a marcação?\n");
-                printf("Número da linha: ");
-                scanf("%d", &x);
-                printf("Número da coluna: ");
-                scanf("%d", &y);
+                lerCoordenada(linhas, colunas, &x, &y);
+                
+                //Tratamento de erro
+                if(x>=linhas || x<0 || y>=colunas || y<0){
+                    printf("Coordenadas inválidas");
+                    break;
+                }
                 
                 //Colocar marcação de bomba
                 if(tabuleiro[x][y] = -1 ){
@@ -214,10 +244,13 @@ int main() {
 
             case 2:
                 printf("Que campo deseja revelar?\n");
-                printf("Número da linha: ");
-                scanf("%d", &x);
-                printf("Número da coluna: ");
-                scanf("%d", &y);
+                lerCoordenada(linhas, colunas, &x, &y);
+                
+                //Tratamento de erro
+                if(x>=linhas || x<0 || y>=colunas || y<0){
+                    printf("Coordenadas inválidas");
+                    break;
+                }
                 
                 //Se achar bomba, perdeu
                 if(tabuleiro[x][y] == -1){
@@ -234,7 +267,10 @@ int main() {
                     exibirTabuleiro(linhas, colunas, tabuleiroExibicao);
                 }
                 printf("Bombas restantes: %d\n\n", numBombas - numBombasAchadas);
-
+                break;
+                
+            default:
+                printf("Digite uma opção válida\n\n");
                 break;
         }
 
