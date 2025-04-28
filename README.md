@@ -5,7 +5,7 @@ Este repositório tem como objetivo armazenar e organizar conteúdos relacionado
 ## Estrutura
 
 - `Exercicies/Basic exercises`: Exercícios básicos de programação, lógica e estrutura de dados `.
-- Projetos maiores, como jogos ou sistemas.
+- `minefield\`: jogo campo minado desenvolvido em C
 
 ## Sobre
 
